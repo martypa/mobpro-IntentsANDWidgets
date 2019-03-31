@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:baselineAligned="false"
+            android:text="HSLU Mobile Programming"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Willkommen zu diesem Kursteil in dem u.a. Intent (Filter und Auflösung) und App- Widgets behandelt werden" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimary"
+            android:padding="5dp"
+            android:text="Intents"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/browserStartButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startBrowseronClick"
+            android:text="Browser Intent starten" />
+
+        <Button
+            android:id="@+id/browserIntentAbfragenButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Browser intent abfragen" />
+
+        <Button
+            android:id="@+id/ownActionStartButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Intent mit eigener Action starten" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimary"
+            android:padding="5dp"
+            android:text="App Widgets"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/newTextEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="neuer Widget Text"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/widgetUpdateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Widget-Text updaten" />
+    </LinearLayout>
+</LinearLayout>
